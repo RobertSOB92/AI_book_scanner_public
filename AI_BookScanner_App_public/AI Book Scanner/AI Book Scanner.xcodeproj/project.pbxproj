@@ -1,0 +1,683 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07FF04AA2EEC1AFF0096E7EB /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 07FF04A92EEC1AFF0096E7EB /* GoogleGenerativeAI */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07FF04412EEC05500096E7EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07FF042B2EEC053B0096E7EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07FF04322EEC053B0096E7EB;
+			remoteInfo = "AI Book Scanner";
+		};
+		07FF044B2EEC05500096E7EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07FF042B2EEC053B0096E7EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07FF04322EEC053B0096E7EB;
+			remoteInfo = "AI Book Scanner";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07FF04332EEC053B0096E7EB /* AI Book Scanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AI Book Scanner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07FF04402EEC05500096E7EB /* AI Book ScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI Book ScannerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07FF044A2EEC05500096E7EB /* AI Book ScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AI Book ScannerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		07FF04A32EEC05D90096E7EB /* Exceptions for "Data" folder in "AI Book Scanner" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Services/GeminiAIService.swift,
+				Services/UserDefaultsSettingsService.swift,
+				Services/VisionOCRService.swift,
+			);
+			target = 07FF04322EEC053B0096E7EB /* AI Book Scanner */;
+		};
+		07FF04A42EEC05D90096E7EB /* Exceptions for "Domain" folder in "AI Book Scanner" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Errors/AppError.swift,
+				Models/BookProcessItem.swift,
+				Models/BookResult.swift,
+				Protocols/ServiceProtocols.swift,
+			);
+			target = 07FF04322EEC053B0096E7EB /* AI Book Scanner */;
+		};
+		07FF04A52EEC05D90096E7EB /* Exceptions for "Presentation" folder in "AI Book Scanner" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ViewModel/BookScannerViewModel.swift,
+				Views/BookDetailView.swift,
+				Views/Components/BookItemRow.swift,
+				Views/Components/ImagePicker.swift,
+				Views/ScannerView.swift,
+				Views/SettingsView.swift,
+			);
+			target = 07FF04322EEC053B0096E7EB /* AI Book Scanner */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		07FF04352EEC053B0096E7EB /* AI Book Scanner */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "AI Book Scanner";
+			sourceTree = "<group>";
+		};
+		07FF04432EEC05500096E7EB /* AI Book ScannerTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "AI Book ScannerTests";
+			sourceTree = "<group>";
+		};
+		07FF044D2EEC05500096E7EB /* AI Book ScannerUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "AI Book ScannerUITests";
+			sourceTree = "<group>";
+		};
+		07FF04812EEC05D90096E7EB /* App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = App;
+			sourceTree = "<group>";
+		};
+		07FF04862EEC05D90096E7EB /* Data */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				07FF04A32EEC05D90096E7EB /* Exceptions for "Data" folder in "AI Book Scanner" target */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		07FF048E2EEC05D90096E7EB /* Domain */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				07FF04A42EEC05D90096E7EB /* Exceptions for "Domain" folder in "AI Book Scanner" target */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		07FF04962EEC05D90096E7EB /* Presentation */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				07FF04A52EEC05D90096E7EB /* Exceptions for "Presentation" folder in "AI Book Scanner" target */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07FF04302EEC053B0096E7EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07FF04AA2EEC1AFF0096E7EB /* GoogleGenerativeAI in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07FF043D2EEC05500096E7EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07FF04472EEC05500096E7EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07FF042A2EEC053B0096E7EB = {
+			isa = PBXGroup;
+			children = (
+				07FF04352EEC053B0096E7EB /* AI Book Scanner */,
+				07FF04432EEC05500096E7EB /* AI Book ScannerTests */,
+				07FF044D2EEC05500096E7EB /* AI Book ScannerUITests */,
+				07FF04342EEC053B0096E7EB /* Products */,
+				07FF04812EEC05D90096E7EB /* App */,
+				07FF04862EEC05D90096E7EB /* Data */,
+				07FF048E2EEC05D90096E7EB /* Domain */,
+				07FF04962EEC05D90096E7EB /* Presentation */,
+			);
+			sourceTree = "<group>";
+		};
+		07FF04342EEC053B0096E7EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07FF04332EEC053B0096E7EB /* AI Book Scanner.app */,
+				07FF04402EEC05500096E7EB /* AI Book ScannerTests.xctest */,
+				07FF044A2EEC05500096E7EB /* AI Book ScannerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07FF04322EEC053B0096E7EB /* AI Book Scanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07FF04542EEC05500096E7EB /* Build configuration list for PBXNativeTarget "AI Book Scanner" */;
+			buildPhases = (
+				07FF042F2EEC053B0096E7EB /* Sources */,
+				07FF04302EEC053B0096E7EB /* Frameworks */,
+				07FF04312EEC053B0096E7EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				07FF04352EEC053B0096E7EB /* AI Book Scanner */,
+				07FF04812EEC05D90096E7EB /* App */,
+			);
+			name = "AI Book Scanner";
+			packageProductDependencies = (
+				07FF04A92EEC1AFF0096E7EB /* GoogleGenerativeAI */,
+			);
+			productName = "AI Book Scanner";
+			productReference = 07FF04332EEC053B0096E7EB /* AI Book Scanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07FF043F2EEC05500096E7EB /* AI Book ScannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07FF04572EEC05500096E7EB /* Build configuration list for PBXNativeTarget "AI Book ScannerTests" */;
+			buildPhases = (
+				07FF043C2EEC05500096E7EB /* Sources */,
+				07FF043D2EEC05500096E7EB /* Frameworks */,
+				07FF043E2EEC05500096E7EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07FF04422EEC05500096E7EB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				07FF04432EEC05500096E7EB /* AI Book ScannerTests */,
+			);
+			name = "AI Book ScannerTests";
+			packageProductDependencies = (
+			);
+			productName = "AI Book ScannerTests";
+			productReference = 07FF04402EEC05500096E7EB /* AI Book ScannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07FF04492EEC05500096E7EB /* AI Book ScannerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07FF045A2EEC05500096E7EB /* Build configuration list for PBXNativeTarget "AI Book ScannerUITests" */;
+			buildPhases = (
+				07FF04462EEC05500096E7EB /* Sources */,
+				07FF04472EEC05500096E7EB /* Frameworks */,
+				07FF04482EEC05500096E7EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07FF044C2EEC05500096E7EB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				07FF044D2EEC05500096E7EB /* AI Book ScannerUITests */,
+			);
+			name = "AI Book ScannerUITests";
+			packageProductDependencies = (
+			);
+			productName = "AI Book ScannerUITests";
+			productReference = 07FF044A2EEC05500096E7EB /* AI Book ScannerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07FF042B2EEC053B0096E7EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2610;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					07FF04322EEC053B0096E7EB = {
+						CreatedOnToolsVersion = 26.1.1;
+					};
+					07FF043F2EEC05500096E7EB = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 07FF04322EEC053B0096E7EB;
+					};
+					07FF04492EEC05500096E7EB = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = 07FF04322EEC053B0096E7EB;
+					};
+				};
+			};
+			buildConfigurationList = 07FF042E2EEC053B0096E7EB /* Build configuration list for PBXProject "AI Book Scanner" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07FF042A2EEC053B0096E7EB;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				07FF04A82EEC1AFF0096E7EB /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 07FF04342EEC053B0096E7EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07FF04322EEC053B0096E7EB /* AI Book Scanner */,
+				07FF043F2EEC05500096E7EB /* AI Book ScannerTests */,
+				07FF04492EEC05500096E7EB /* AI Book ScannerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07FF04312EEC053B0096E7EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07FF043E2EEC05500096E7EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07FF04482EEC05500096E7EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07FF042F2EEC053B0096E7EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07FF043C2EEC05500096E7EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07FF04462EEC05500096E7EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07FF04422EEC05500096E7EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07FF04322EEC053B0096E7EB /* AI Book Scanner */;
+			targetProxy = 07FF04412EEC05500096E7EB /* PBXContainerItemProxy */;
+		};
+		07FF044C2EEC05500096E7EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07FF04322EEC053B0096E7EB /* AI Book Scanner */;
+			targetProxy = 07FF044B2EEC05500096E7EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07FF04522EEC05500096E7EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = KMX5GN4664;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07FF04532EEC05500096E7EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = KMX5GN4664;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07FF04552EEC05500096E7EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 444GG2S2B8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Potrzebujemy dostępu do zdjęć, aby skanować okładki książek.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robo.AI-Book-Scanner-puc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07FF04562EEC05500096E7EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 444GG2S2B8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Potrzebujemy dostępu do zdjęć, aby skanować okładki książek.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robo.AI-Book-Scanner-puc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		07FF04582EEC05500096E7EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KMX5GN4664;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robo.AI-Book-ScannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AI Book Scanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AI Book Scanner";
+			};
+			name = Debug;
+		};
+		07FF04592EEC05500096E7EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KMX5GN4664;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robo.AI-Book-ScannerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AI Book Scanner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AI Book Scanner";
+			};
+			name = Release;
+		};
+		07FF045B2EEC05500096E7EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KMX5GN4664;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robo.AI-Book-ScannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AI Book Scanner";
+			};
+			name = Debug;
+		};
+		07FF045C2EEC05500096E7EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KMX5GN4664;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.robo.AI-Book-ScannerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "AI Book Scanner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07FF042E2EEC053B0096E7EB /* Build configuration list for PBXProject "AI Book Scanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07FF04522EEC05500096E7EB /* Debug */,
+				07FF04532EEC05500096E7EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07FF04542EEC05500096E7EB /* Build configuration list for PBXNativeTarget "AI Book Scanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07FF04552EEC05500096E7EB /* Debug */,
+				07FF04562EEC05500096E7EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07FF04572EEC05500096E7EB /* Build configuration list for PBXNativeTarget "AI Book ScannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07FF04582EEC05500096E7EB /* Debug */,
+				07FF04592EEC05500096E7EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07FF045A2EEC05500096E7EB /* Build configuration list for PBXNativeTarget "AI Book ScannerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07FF045B2EEC05500096E7EB /* Debug */,
+				07FF045C2EEC05500096E7EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		07FF04A82EEC1AFF0096E7EB /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		07FF04A92EEC1AFF0096E7EB /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 07FF04A82EEC1AFF0096E7EB /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 07FF042B2EEC053B0096E7EB /* Project object */;
+}
